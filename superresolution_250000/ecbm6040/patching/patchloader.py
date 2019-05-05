@@ -88,8 +88,8 @@ def patching(lr_data, hr_data, patch_size = 2, cube_size = 64, usage = 1.0, marg
         stride = cube_size- 2 * margin # patch stride, when merging patches, we need to reduce stride for we need to give up the margin to avoid margin effect.
         padding=[20, 17, 17] # calculate how many paddings we need to care for edges of images, for simplicity, the numbers are pre-calculated by default patch size, for different size of input, it should be different.
         # Padding
-        lr_data_padded = torch.zeros([2,lr_data.shape[1] + 2 * padding[0],lr_data.shape[2]+ 2 * padding[1],lr_data.shape[3] + 2 * padding[2]])
-        hr_data_padded = torch.zeros([2,hr_data.shape[1] + 2 * padding[0],hr_data.shape[2]+ 2 * padding[1],hr_data.shape[3] + 2 * padding[2]])
+        lr_data_padded = torch.zeros([lr_data.shape[0] ,lr_data.shape[1] + 2 * padding[0],lr_data.shape[2]+ 2 * padding[1],lr_data.shape[3] + 2 * padding[2]])
+        hr_data_padded = torch.zeros([lr_data.shape[0] ,hr_data.shape[1] + 2 * padding[0],hr_data.shape[2]+ 2 * padding[1],hr_data.shape[3] + 2 * padding[2]])
         lr_data_padded[:, padding[0]: lr_data.shape[1]+padding[0], padding[1]: lr_data.shape[2]+padding[1], 
                        padding[2]: lr_data.shape[3]+padding[2]] = lr_data
         hr_data_padded[:, padding[0]: hr_data.shape[1]+padding[0], padding[1]: hr_data.shape[2]+padding[1], 
