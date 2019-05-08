@@ -17,7 +17,7 @@ These instructions will provide you a guideline for our basic functions as well 
 
 #### Description 
 This repo aims at reproducing the results of the paper https://arxiv.org/abs/1803.01417. Here is the abstract :
->High-resolution (HR) magnetic resonance images (MRI) provide detailed anatomical information important for clinical application and> quantitative
+>High-resolution (HR) magnetic resonance images (MRI) provide detailed anatomical information important for clinical application and quantitative
 image analysis. However, HR MRI conventionally comes at the cost of longer
 scan time, smaller spatial coverage, and lower signal-to-noise ratio (SNR). Recent studies have shown that single image super-resolution (SISR), a technique
 to recover HR details from one single low-resolution (LR) input image, could
