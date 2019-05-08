@@ -1,10 +1,10 @@
 # E6040-super-resolution-project
 
 TODO : 
-testing 
-visualisation
-comments
-readme
+- [ ] testing 
+- [ ] visualisation
+- [x] comments
+- [x] readme
 
 ### Group: DPLN
 * 	Huixiang Zhuang hz2538@COLUMBIA.EDU
