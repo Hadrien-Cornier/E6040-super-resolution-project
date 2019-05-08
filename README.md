@@ -15,7 +15,7 @@ readme
 ### Getting Started
 These instructions will provide you a guideline for our basic functions as well as how to running on your machine for development and testing purposes.
 #### Prerequisites
-<code> **pip install numpy pickle-mixin pandas matplotlib** </code>
+<code> pip install numpy pickle-mixin pandas matplotlib </code>
 
 <code> torch </code>
 
