@@ -54,3 +54,6 @@ loaddata.ipynb
 
 * ecbm6040/dataloader
 >contains a custom dataloader than can read medical images using the specialized nibabel library
+
+* ecbm6040/metric
+>contains the metrics used for the testing phase
