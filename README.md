@@ -15,8 +15,9 @@ readme
 ### Getting Started
 These instructions will provide you a guideline for our basic functions as well as how to running on your machine for development and testing purposes.
 #### Prerequisites
-<code> _This text will be italic_ **this text will be bold** </code>
-numpy pickle matplotlib pandas torch torchvision
+<code> **pip install numpy pickle-mixin pandas matplotlib** </code>
+<code> torch </code>
+<code> torchvision </code>
 #### Introducing the files in project
 DCSRN+SRGAN.ipynb
 >This script is our main jupyter notebook. Implemented all experimental results.
