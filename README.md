@@ -15,7 +15,7 @@ readme
 ### Getting Started
 These instructions will provide you a guideline for our basic functions as well as how to running on your machine for development and testing purposes.
 #### Prerequisites
-TODO
+numpy pickle matplotlib pandas torch torchvision
 #### Introducing the files in project
 DCSRN+SRGAN.ipynb
 >This script is our main jupyter notebook. Implemented all experimental results.
