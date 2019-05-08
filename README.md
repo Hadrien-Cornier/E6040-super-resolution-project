@@ -34,7 +34,7 @@ Train_WGAN.ipynb
 loaddata.ipynb
 >An example of data loading from google storage.
 
-**ecbm6040 backend**
+*ecbm6040 backend*
 
 * ecbm6040/patching
 >contains patchloader.py which takes full medical 3D images of dimensions 256x320x320 as input and cuts them into 4x5x5=100 patches of size 64x64x64
