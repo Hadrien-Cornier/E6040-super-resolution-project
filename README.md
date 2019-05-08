@@ -17,10 +17,10 @@ These instructions will provide you a guideline for our basic functions as well 
 #### Prerequisites
 TODO
 #### Introducing the files in project
-main.iqynp
+main.ipynb
 >This script is our main jupyter notebook. Implemented our whole project.
 >
-loaddata.iqynp
+loaddata.ipynb
 >This script is our second jupyter notebook. However, you have to run it first, since it will read the tiff file and convert it to array
 >make sure you hace already install libtiff before using it.
 ./DPLN/pyramidLSTM.py
