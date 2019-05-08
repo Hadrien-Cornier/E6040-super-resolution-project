@@ -11,6 +11,8 @@
 These instructions will provide you a guideline for our basic functions as well as how to running on your machine for development and testing purposes.
 
 #### Description 
+The objective is to create a network that can take a low-resolution MRI scan and turn it into a super resolution scan.
+
 This repo aims at reproducing the results of the paper https://arxiv.org/abs/1803.01417. Here is the abstract :
 >High-resolution (HR) magnetic resonance images (MRI) provide detailed anatomical information important for clinical application and quantitative
 image analysis. However, HR MRI conventionally comes at the cost of longer
@@ -23,6 +25,14 @@ training. The mDCSRN trains and inferences quickly, and the GAN promotes
 realistic output hardly distinguishable from original HR images. Our results from
 experiments on a dataset with 1,113 subjects shows that our new architecture
 outperforms other popular deep learning methods in recovering 4x resolutiondowngraded images and runs 6x faster.
+
+#### Dataset
+The dataset is a large and publicly accessible brain structural MRI database, [http://www.humanconnectomeproject.org/][the human connectome project]. The data contains 3D
+T1W images from a total of 1,113 subjects that were acquired via a Siemens 3T platform 
+6
+using 32-channel head coils on multiple centers. 
+
+The images come in high spatial resolution as 0.7 mm isotropic in a matrix size of 320x320x256
 
 #### Prerequisites
 To install the necessary packages, run the following command :
