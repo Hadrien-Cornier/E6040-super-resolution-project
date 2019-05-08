@@ -16,7 +16,9 @@ readme
 These instructions will provide you a guideline for our basic functions as well as how to running on your machine for development and testing purposes.
 #### Prerequisites
 <code> **pip install numpy pickle-mixin pandas matplotlib** </code>
+
 <code> torch </code>
+
 <code> torchvision </code>
 #### Introducing the files in project
 DCSRN+SRGAN.ipynb
