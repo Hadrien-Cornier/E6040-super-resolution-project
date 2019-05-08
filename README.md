@@ -67,3 +67,7 @@ loaddata.ipynb
 
 * ecbm6040/metric
 >contains the metrics used for the testing phase
+
+#### How to run the code 
+
+Open *DCSRN+SRGAN.ipynb* and execute all cells.
