@@ -27,7 +27,7 @@ experiments on a dataset with 1,113 subjects shows that our new architecture
 outperforms other popular deep learning methods in recovering 4x resolutiondowngraded images and runs 6x faster.
 
 #### Dataset
-The dataset is a large and publicly accessible brain structural MRI database, [http://www.humanconnectomeproject.org/][the human connectome project]. The data contains 3D
+The dataset is a large and publicly accessible brain structural MRI database, [http://www.humanconnectomeproject.org/](the human connectome project). The data contains 3D
 T1W images from a total of 1,113 subjects that were acquired via a Siemens 3T platform 
 6
 using 32-channel head coils on multiple centers. 
