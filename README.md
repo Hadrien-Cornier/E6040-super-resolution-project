@@ -36,11 +36,11 @@ loaddata.ipynb
 
 **ecbm6040 backend**
 
-*ecbm6040/patching
+* ecbm6040/patching
 >contains patchloader.py which takes full medical 3D images of dimensions 256x320x320 as input and cuts them into 4x5x5=100 patches of size 64x64x64
 
-*ecbm6040/model
+* ecbm6040/model
 >contains mDCSRN_WGAN.py which is the torch file containing the definition of the Generator and Discriminator neural networks
 
-*ecbm6040/dataloader
+* ecbm6040/dataloader
 >contains a custom dataloader than can read medical images using the specialized nibabel library
