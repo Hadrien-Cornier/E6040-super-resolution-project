@@ -32,7 +32,7 @@ T1W images from a total of 1,113 subjects that were acquired via a Siemens 3T pl
 6
 using 32-channel head coils on multiple centers. 
 
-The images come in high spatial resolution as 0.7 mm isotropic in a matrix size of 320x320x256
+The images come in high spatial resolution as 0.7 mm isotropic in a matrix size of 256x320x320
 
 #### Prerequisites
 To install the necessary packages, run the following command :
