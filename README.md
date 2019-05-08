@@ -14,6 +14,21 @@ TODO :
 
 ### Getting Started
 These instructions will provide you a guideline for our basic functions as well as how to running on your machine for development and testing purposes.
+
+#### Description 
+This repo aims at reproducing the results of the paper https://arxiv.org/abs/1803.01417. Here is the abstract :
+>High-resolution (HR) magnetic resonance images (MRI) provide detailed anatomical information important for clinical application and> >quantitative
+>image analysis. However, HR MRI conventionally comes at the cost of longer
+>scan time, smaller spatial coverage, and lower signal-to-noise ratio (SNR). Recent studies have shown that single image super->resolution (SISR), a technique
+>to recover HR details from one single low-resolution (LR) input image, could
+>provide high quality image details with the help of advanced deep convolutional
+>neural networks (CNN). However, deep neural networks consume memory heavily and run slowly, especially in 3D settings. In this paper, >we propose a novel
+>3D neural network design, namely a multi-level densely connected super-resolution network (mDCSRN) with generative adversarial network >(GAN)–guided
+>training. The mDCSRN trains and inferences quickly, and the GAN promotes
+>realistic output hardly distinguishable from original HR images. Our results from
+>experiments on a dataset with 1,113 subjects shows that our new architecture
+>outperforms other popular deep learning methods in recovering 4x resolutiondowngraded images and runs 6x faster.
+
 #### Prerequisites
 To install the necessary packages, run the following command :
 
