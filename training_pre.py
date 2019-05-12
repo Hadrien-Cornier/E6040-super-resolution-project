@@ -85,8 +85,8 @@ def training_pre(model, dataloaders, dataset_sizes,
                             optimizer.step()
                             step += 1          # we count step here
                             #This print out is only for early inspection
-                            if (step % 500) == 0:
-                                print('Step: {}, loss= {:.4f}'.format(step, loss.item()))
+#                             if (step % 500) == 0:
+#                                 print('Step: {}, loss= {:.4f}'.format(step, loss.item()))
                             if (step % int(max_step // 10)) ==0:
                                 # save intermediate models
                                 torch.save(model,'models/pretrained_G_step{}'.format(step))
@@ -113,7 +113,7 @@ def training_pre(model, dataloaders, dataset_sizes,
                     patch_loss += loss.item() * lr_patches.size(0)
                 batch_loss += patch_loss / patch_count    
             epoch_loss = batch_loss / dataset_sizes[phase]
-            print('{} Loss: {:.4f}'.format(phase, epoch_loss))
+            print('Step: {}, {} Loss: {:.4f}'.format(step, phase, epoch_loss))
     
         time_elapsed = time.time() - since
         print('Now the training uses {:.0f}m {:.0f}s'.format(
