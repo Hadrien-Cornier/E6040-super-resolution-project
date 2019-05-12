@@ -1,4 +1,6 @@
-# This file includes Dataset class for PyTorch
+# This file includes Dataset class for PyTorch. You should first apply for the access to my google storage "hz2538",
+# then use "gcsfuse --implicit-dirs" command to mount the disk on Google storage to your VM instance or local machine.
+
 import torch
 import numpy as np
 import math
@@ -20,8 +22,7 @@ class CustomDatasetFromCSV(Dataset):
         
     def transform(self, image):
         '''
-        This function transforms the 3D image of np.ndarray (z,x,y) to
-        a torch.ShortTensor (B,z,x,y).
+        This function transforms the 3D image of np.ndarray (z,x,y) to a torch.ShortTensor (B,z,x,y).
         
         '''
         image_torch = torch.ShortTensor(image)
@@ -29,6 +30,7 @@ class CustomDatasetFromCSV(Dataset):
       
     def __getitem__(self, idx):
         img_id = str(self.data.iloc[idx, 0])
+        # set path according to the root of mounted disk in your VM instance or local machine
         nifti_path = self.vm_path + img_id + '/unprocessed/3T/T1w_MPR1/'+ img_id + '_3T_T1w_MPR1.nii.gz'
         mat_path = self.vm_path + img_id + '/unprocessed/3T/T1w_MPR1/'+ img_id + '_LR.mat'
         # read nii file, and change it to numpy
