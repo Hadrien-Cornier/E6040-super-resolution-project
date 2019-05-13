@@ -122,9 +122,11 @@ training_pre.py
 After being accepted, use 
 
     gcsfuse --implicit-dirs "hz2538" mnt
+    
 to mount the disk to your GCP VM instance or local machine. For 
 
     gcsfuse
+    
 , see details on their website: https://github.com/GoogleCloudPlatform/gcsfuse
 
 Please contact Huixiang Zhuang: hz2538@columbia.edu.
