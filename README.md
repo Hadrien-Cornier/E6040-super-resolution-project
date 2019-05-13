@@ -13,25 +13,18 @@ These instructions will provide you a guideline for our basic functions as well 
 #### Description 
 The objective is to create a network that can take a low-resolution MRI scan and turn it into a super resolution scan.
 
-This repo aims at reproducing the results of the paper https://arxiv.org/abs/1803.01417. Here is the abstract :
->High-resolution (HR) magnetic resonance images (MRI) provide detailed anatomical information important for clinical application and quantitative
-image analysis. However, HR MRI conventionally comes at the cost of longer
-scan time, smaller spatial coverage, and lower signal-to-noise ratio (SNR). Recent studies have shown that single image super-resolution (SISR), a technique
-to recover HR details from one single low-resolution (LR) input image, could
-provide high quality image details with the help of advanced deep convolutional
-neural networks (CNN). However, deep neural networks consume memory heavily and run slowly, especially in 3D settings. In this paper, we propose a novel
-3D neural network design, namely a multi-level densely connected super-resolution network (mDCSRN) with generative adversarial network >(GAN)–guided
-training. The mDCSRN trains and inferences quickly, and the GAN promotes
-realistic output hardly distinguishable from original HR images. Our results from
-experiments on a dataset with 1,113 subjects shows that our new architecture
-outperforms other popular deep learning methods in recovering 4x resolutiondowngraded images and runs 6x faster.
+This repo aims at reproducing the results of the paper https://arxiv.org/abs/1803.01417. We mainly replaced all fully-connected layers by global average pooling and convolution layers, re-designed the training scheme, adjusted the extent of low-resolution. 
 
 #### Dataset
 The dataset is a large and publicly accessible brain structural MRI database called Human Connectome Project (HCP): https://http://www.humanconnectomeproject.org. The data contains 3D
-T1-weighted images from a total of 1,113 subjects that were acquired via a Siemens 3T platform using 32-channel head coils on multiple centers. The images come in high spatial resolution as 0.7 mm isotropic in a matrix size of 256x320x320. You need to register and log in the website: https://db.humanconnectome.org. either download full dataset from that website or request access to their Amazon S3.
+T1-weighted images from a total of 1,113 subjects that were acquired via a Siemens 3T platform using 32-channel head coils on multiple centers. The images come in high spatial resolution as 0.7 mm isotropic in a matrix size of 256x320x320. You need to register and log in the website: https://db.humanconnectome.org. You can either download full dataset from that website or request access to their Amazon S3.
 
 #### Prerequisites
-The coding is based on PyTorch. The project is implemented originally on Google Cloud Platform (GCP). See full details of the environment requirements in *requirements.txt*.
+The coding is based on PyTorch 0.4.0 with CUDA 9.1 and CUDNN 7.5. The project is implemented originally on Google Cloud Platform (GCP).
+Basically, you need these tools:
+>pip install numpy matplotlib scipy nibabel pandas skimage
+
+See full details of the environment requirements in *requirements.txt*.
 
 #### Introducing the files in project
 
@@ -114,4 +107,6 @@ training_pre.py
 
 #### How to run the code 
 
-Open *main.ipynb* and execute all cells.
+* Make connection to the dataset.
+
+* Open *main.ipynb* and execute all cells.
