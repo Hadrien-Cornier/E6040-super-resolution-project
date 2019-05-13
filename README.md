@@ -15,6 +15,8 @@ The objective is to create a network that can take a low-resolution MRI scan and
 
 This repo aims at reproducing the results of the paper https://arxiv.org/abs/1803.01417. The network architecture is shown below:
 
+![Architecture](./example_images/architecture2.png)
+
 We mainly replaced all fully-connected layers by global average pooling and convolution layers, re-designed the training scheme, adjusted the extent of low-resolution. 
 
 #### Dataset
