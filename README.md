@@ -27,7 +27,7 @@ T1-weighted images from a total of 1,113 subjects that were acquired via a Sieme
 The coding is based on PyTorch 0.4.0 with CUDA 9.1 and CUDNN 7.5. The project is implemented originally on Google Cloud Platform (GCP).
 Basically, you need these tools:
 
-    pip install numpy matplotlib scipy nibabel pandas skimage
+`pip install numpy matplotlib scipy nibabel pandas skimage`
 
 See full details of the environment requirements in *requirements.txt*.
 
@@ -112,7 +112,9 @@ training_pre.py
 
 #### Examples
 
-![SR examples](./example_images/sr_examples.png)
+![SR examples_images](./example_images/sr_image.png)
+
+![SR examples_patches](./example_images/sr_patch.png)
 
 #### How to run the code 
 
