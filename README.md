@@ -110,6 +110,10 @@ training_pre.py
 * requirements.txt
 >the required environment for the experiment.
 
+#### Examples
+
+![SR examples](./example_images/sr_examples.png)
+
 #### How to run the code 
 
 * Make connection to the dataset.
