@@ -10,7 +10,7 @@
 ### Getting Started
 These instructions will provide you a guideline for our basic functions as well as how to running on your machine for development and testing purposes.
 
-#### Description 
+### Description 
 The objective is to create a network that can take a low-resolution MRI scan and turn it into a super resolution scan.
 
 This repo aims at reproducing the results of the paper https://arxiv.org/abs/1803.01417. The network architecture is shown below:
@@ -19,11 +19,11 @@ This repo aims at reproducing the results of the paper https://arxiv.org/abs/180
 
 We mainly replaced all fully-connected layers by global average pooling and convolution layers, re-designed the training scheme, and adjusted the extent of low-resolution. 
 
-#### Dataset
+### Dataset
 The dataset is a large and publicly accessible brain structural MRI database called Human Connectome Project (HCP): https://www.humanconnectomeproject.org. The data contains 3D
 T1-weighted images from a total of 1,113 subjects that were acquired via a Siemens 3T platform using 32-channel head coils on multiple centers. The images come in high spatial resolution as 0.7 mm isotropic in a matrix size of 256x320x320. You need to register and log in the website: https://db.humanconnectome.org. You can either download full dataset from that website or request access to their Amazon S3.
 
-#### Prerequisites
+### Prerequisites
 The coding is based on PyTorch 0.4.0 with CUDA 9.1 and CUDNN 7.5. The project is implemented originally on Google Cloud Platform (GCP).
 Basically, you need these tools:
 
@@ -31,7 +31,7 @@ Basically, you need these tools:
 
 See full details of the environment requirements in *requirements.txt*.
 
-#### Introducing the files in project
+### Introducing the files in project
 
     |-- csv
         |-- id_hcp.csv
@@ -110,13 +110,13 @@ training_pre.py
 * requirements.txt
 >the required environment for the experiment.
 
-#### Examples
+### Examples
 
 ![SR examples_images](./example_images/sr_image.png)
 
 ![SR examples_patches](./example_images/sr_patch.png)
 
-#### How to run the code 
+### How to run the code 
 
 * Make connection to the dataset.
 >Multiple options to prepare the dataset:
@@ -128,6 +128,6 @@ training_pre.py
 
 * Open *main.ipynb* and execute all cells.
 
-#### Acknowledgement
+### Acknowledgement
 
 We would present our sincere thanks to our research partners Jiayu Wang, Xiaomin He, Jieying Mai, who provide huge support on our project and have implemented Tensorflow version of this project (Their project link to be updated).
