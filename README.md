@@ -66,35 +66,27 @@ To install the necessary packages, run the following command :
 
         
             
-DCSRN+SRGAN.ipynb
+main.ipynb
 >This script is our main jupyter notebook. Implemented all experimental results.
 >
 
-Pretrain_G.ipynb
->This is the jupyter notebook for generator pretraining. 
->The results are merged into main DCSRN+SRGAN.ipynb.
-
-Train_WGAN.ipynb
->This is the jupyter notebook for WGAN training (formal training).
->The results are merged into main DCSRN+SRGAN.ipynb.
-
 loaddata.ipynb
->An example of data loading from google storage.
+>An example of data loading from google storage, and how we implement dataloaders for batches and patches in this project.
 
 *ecbm6040 backend*
 
-* ecbm6040/patching
->contains patchloader.py which takes full medical 3D images of dimensions 256x320x320 as input and cuts them into 4x5x5=100 patches of size 64x64x64
-
-* ecbm6040/model
->contains mDCSRN_WGAN.py which is the torch file containing the definition of the Generator and Discriminator neural networks
-
 * ecbm6040/dataloader
->contains a custom dataloader than can read medical images using the specialized nibabel library
+>contains a custom dataloader than can read medical images (NIFTI files) using the specialized nibabel library and MATLAB matrices (.mat files) using scipy.io.loadmat library.
 
 * ecbm6040/metric
->contains the metrics used for the testing phase
+>contains the metrics functions for calculating SSIM, PSNR, and NRMSE.
+
+* ecbm6040/model
+>contains mDCSRN_WGAN.py which is the torch file containing the definition of the Generator and Discriminator neural networks.
+
+* ecbm6040/patching
+>contains patchloader.py which takes full medical 3D images of dimensions 256x320x320 as input and cuts them into 4x5x5=100 patches of size 64x64x64.
 
 #### How to run the code 
 
-Open *DCSRN+SRGAN.ipynb* and execute all cells.
+Open *main.ipynb* and execute all cells.
