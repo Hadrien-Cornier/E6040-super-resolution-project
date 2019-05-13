@@ -13,7 +13,9 @@ These instructions will provide you a guideline for our basic functions as well 
 #### Description 
 The objective is to create a network that can take a low-resolution MRI scan and turn it into a super resolution scan.
 
-This repo aims at reproducing the results of the paper https://arxiv.org/abs/1803.01417. We mainly replaced all fully-connected layers by global average pooling and convolution layers, re-designed the training scheme, adjusted the extent of low-resolution. 
+This repo aims at reproducing the results of the paper https://arxiv.org/abs/1803.01417. The network architecture is shown below:
+
+We mainly replaced all fully-connected layers by global average pooling and convolution layers, re-designed the training scheme, adjusted the extent of low-resolution. 
 
 #### Dataset
 The dataset is a large and publicly accessible brain structural MRI database called Human Connectome Project (HCP): https://http://www.humanconnectomeproject.org. The data contains 3D
