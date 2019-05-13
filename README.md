@@ -68,10 +68,15 @@ To install the necessary packages, run the following command :
             
 main.ipynb
 >This script is our main jupyter notebook. Implemented all experimental results.
->
 
 loaddata.ipynb
 >An example of data loading from google storage, and how we implement dataloaders for batches and patches in this project.
+
+WGAN_GP.py
+>contains class WGAN_GP for training, and testing the model.
+
+training_pre.py
+>contains function training_pre for Generator pretraining. (This can also be regarded as the complete training of mDCSRN.)
 
 *ecbm6040 backend*
 
@@ -86,6 +91,31 @@ loaddata.ipynb
 
 * ecbm6040/patching
 >contains patchloader.py which takes full medical 3D images of dimensions 256x320x320 as input and cuts them into 4x5x5=100 patches of size 64x64x64.
+
+*other folders*
+
+* csv
+>contains the id list of the dataset. id_hcp.csv for the complete 1,113 dataset; id_hcp_test.csv for the small 130 dataset.
+
+*example_images
+>contains all the example figures for illustration in jupyter notebooks and the intermediate results during training. Considering the space, we only uploaded some of them. All intermediate results during training will be actually stored in this folder.
+
+*loss_history
+>contains the loss history through the formal training steps.
+
+*mnt
+>a directory that you need to mount the original data folder in google storage to.
+
+*models
+>contains the final models.
+
+*other files*
+
+*README.md
+>the main introduction of our project.
+
+*requirements.txt
+>the required environment for the experiment.
 
 #### How to run the code 
 
