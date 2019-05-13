@@ -61,6 +61,7 @@ To install the necessary packages, run the following command :
     |-- WGAN_GP.py    
     |-- loaddata.ipynb
     |-- main.ipynb
+    |-- requirements.txt
     |-- training_pre.py
 
         
