@@ -39,6 +39,32 @@ To install the necessary packages, run the following command :
 
 <code> pip install nibabel numpy pickle-mixin pandas matplotlib torch torchvision</code>
 #### Introducing the files in project
+
+    |-- csv
+        |-- id_hcp.csv
+        |-- id_hcp_test.csv
+    |-- ecbm6040
+        |-- dataloader
+            |-- CustomDatasetFromCSV.py
+        |-- metric
+            |-- eval_metrics.py
+        |-- model
+            |-- mDCSRN_WGAN.py
+        |-- patching
+            |-- idx_mine.mat
+            |-- patchloader.py
+    |-- example_images
+    |-- loss_history
+    |-- mnt
+    |-- models
+    |-- README.md
+    |-- WGAN_GP.py    
+    |-- loaddata.ipynb
+    |-- main.ipynb
+    |-- training_pre.py
+
+        
+            
 DCSRN+SRGAN.ipynb
 >This script is our main jupyter notebook. Implemented all experimental results.
 >
