@@ -17,7 +17,7 @@ This repo aims at reproducing the results of the paper https://arxiv.org/abs/180
 
 ![Architecture](./example_images/architecture2.png)
 
-We mainly replaced all fully-connected layers by global average pooling and convolution layers, re-designed the training scheme, adjusted the extent of low-resolution. 
+We mainly replaced all fully-connected layers by global average pooling and convolution layers, re-designed the training scheme, and adjusted the extent of low-resolution. 
 
 #### Dataset
 The dataset is a large and publicly accessible brain structural MRI database called Human Connectome Project (HCP): https://http://www.humanconnectomeproject.org. The data contains 3D
