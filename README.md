@@ -1,7 +1,7 @@
 # E6040-super-resolution-project
 
 
-### Group: DPLN
+### Group: SPRL
 * 	Huixiang Zhuang hz2538@COLUMBIA.EDU
 >https://github.com/hz2538
 * 	Hadrien Cornier hc3040@COLUMBIA.EDU
@@ -27,17 +27,12 @@ experiments on a dataset with 1,113 subjects shows that our new architecture
 outperforms other popular deep learning methods in recovering 4x resolutiondowngraded images and runs 6x faster.
 
 #### Dataset
-The dataset is a large and publicly accessible brain structural MRI database : http://www.humanconnectomeproject.org . The data contains 3D
-T1W images from a total of 1,113 subjects that were acquired via a Siemens 3T platform 
-6
-using 32-channel head coils on multiple centers. 
-
-The images come in high spatial resolution as 0.7 mm isotropic in a matrix size of 256x320x320
+The dataset is a large and publicly accessible brain structural MRI database called Human Connectome Project (HCP): https://http://www.humanconnectomeproject.org. The data contains 3D
+T1-weighted images from a total of 1,113 subjects that were acquired via a Siemens 3T platform using 32-channel head coils on multiple centers. The images come in high spatial resolution as 0.7 mm isotropic in a matrix size of 256x320x320. You need to register and log in the website: https://db.humanconnectome.org. either download full dataset from that website or request access to their Amazon S3.
 
 #### Prerequisites
-To install the necessary packages, run the following command :
+The coding is based on PyTorch. The project is implemented originally on Google Cloud Platform (GCP). See full details of the environment requirements in *requirements.txt*.
 
-<code> pip install nibabel numpy pickle-mixin pandas matplotlib torch torchvision</code>
 #### Introducing the files in project
 
     |-- csv
@@ -97,24 +92,24 @@ training_pre.py
 * csv
 >contains the id list of the dataset. id_hcp.csv for the complete 1,113 dataset; id_hcp_test.csv for the small 130 dataset.
 
-*example_images
+* example_images
 >contains all the example figures for illustration in jupyter notebooks and the intermediate results during training. Considering the space, we only uploaded some of them. All intermediate results during training will be actually stored in this folder.
 
-*loss_history
+* loss_history
 >contains the loss history through the formal training steps.
 
-*mnt
+* mnt
 >a directory that you need to mount the original data folder in google storage to.
 
-*models
+* models
 >contains the final models.
 
 *other files*
 
-*README.md
+* README.md
 >the main introduction of our project.
 
-*requirements.txt
+* requirements.txt
 >the required environment for the experiment.
 
 #### How to run the code 
