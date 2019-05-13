@@ -113,5 +113,20 @@ training_pre.py
 #### How to run the code 
 
 * Make connection to the dataset.
+>Multiple options to prepare the dataset:
+1. Use the example dataset we prepared. (It's already in folder *mnt*, but the small one that can only used for testing and cannot used for training.)
+
+2. Download from HCP dataset (The link above). But you need to downgrade the HR images by yourself. Here we provide an offline version MATLAB code for you (see kspace.m). Local storage is required. Online version is not provided in consideration of privacy. Then, arrange the data similarly in folder *mnt*.
+
+3. Request for full access to our Google Storage: gs://hz2538
+After being accepted, use 
+
+    gcsfuse --implicit-dirs "hz2538" mnt
+to mount the disk to your GCP VM instance or local machine. For 
+
+    gcsfuse
+, see details on their website: https://github.com/GoogleCloudPlatform/gcsfuse
+
+Please contact Huixiang Zhuang: hz2538@columbia.edu.
 
 * Open *main.ipynb* and execute all cells.
