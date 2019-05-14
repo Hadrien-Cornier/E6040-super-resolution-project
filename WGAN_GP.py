@@ -476,8 +476,8 @@ class WGAN_GP(object):
 
         print ("WGAN testing...")
         if pretrainedD != ' ':
-            self.netD = torch.load(pretrainedD)
-        self.netG = torch.load(pretrainedG)
+            self.netD.load_state_dict(torch.load(pretrainedD))
+        self.netG.load_state_dict(torch.load(pretrainedG))
         test_loss=[]
         test_D_loss=[]
         self.netD.eval()   # Set model to eval mode
@@ -520,6 +520,15 @@ class WGAN_GP(object):
         std_psnr = np.std(test_psnr)
         mean_nrmse = np.mean(test_nrmse)
         std_nrmse = np.std(test_nrmse)
-
+        
+        f=open('example_images/image_lr.txt','wb')
+        pickle.dump(lr_data[0].cpu().numpy() ,f)
+        f.close()
+        f=open('example_images/image_sr.txt','wb')
+        pickle.dump(sr_data[0].cpu().numpy() ,f)
+        f.close()
+        f=open('example_images/image_hr.txt','wb')
+        pickle.dump(hr_data[0].cpu().numpy() ,f)
+        f.close()
         print('Metrics: subject-wise mean SSIM = {:.4f}, std = {:.4f}; mean PSNR = {:.4f}, std = {:.4f}; mean NRMSE = {:.4f}, std = {:.4f}.'.format(mean_ssim, std_ssim, mean_psnr, std_psnr, mean_nrmse, std_nrmse))
         return
