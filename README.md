@@ -52,6 +52,7 @@ See full details of the environment requirements in *requirements.txt*.
     |-- models
     |-- README.md
     |-- WGAN_GP.py    
+    |-- kspace.m
     |-- loaddata.ipynb
     |-- main.ipynb
     |-- requirements.txt
@@ -106,6 +107,9 @@ training_pre.py
 
 * README.md
 >the main introduction of our project.
+
+* kspace.m
+>the example code for LR image generation implemented in Matlab.
 
 * requirements.txt
 >the required environment for the experiment.
