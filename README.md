@@ -112,9 +112,7 @@ training_pre.py
 
 ### Examples
 
-![SR examples_images](./example_images/sr_image.png)
-
-![SR examples_patches](./example_images/sr_patch.png)
+![SR examples_images](./example_images/example.png)
 
 ### How to run the code 
 
