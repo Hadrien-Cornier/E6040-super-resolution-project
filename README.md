@@ -120,7 +120,7 @@ training_pre.py
 
 ### How to run the code 
 
-* Make connection to the dataset.
+* Connect to the dataset.
 >Multiple options to prepare the dataset:
 1. Use the example dataset we prepared. (It's already in folder *mnt*, but the small one that can only used for testing and cannot used for training.)
 
@@ -132,4 +132,4 @@ training_pre.py
 
 ### Acknowledgements
 
-We would present our sincere thanks to our research partners Jiayu Wang, Xiaomin He, Jieying Mai, who provide huge support on our project and have implemented Tensorflow version of this project (Their project link TO BE UPDATE).
+We would present our sincere thanks to our research partners Jiayu Wang, Xiaomin He, Jieying Mai, who provided huge support on our project and have implemented Tensorflow version of this project (Their project link TO BE UPDATE).
