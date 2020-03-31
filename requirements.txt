@@ -5,7 +5,7 @@ attrs==19.1.0
 backcall==0.1.0
 bcolz==1.2.1
 beautifulsoup4==4.7.1
-bleach==3.1.0
+bleach==3.1.4
 blis==0.2.4
 Bottleneck==1.2.1
 certifi==2019.3.9
